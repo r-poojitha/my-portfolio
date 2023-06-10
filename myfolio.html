@@ -1,0 +1,184 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="myfolio.css">
+    <script src="https://kit.fontawesome.com/3ee522b662.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1 style="font-size: 300%;" class="logo"><i><span style="color:gold;">P</span><span style="color:white;">O</span><span style="color: gold;">O</span><span style="color:white;">J</span><span style="color:gold">I</span><span style="color:white;">T</span><span style="color: gold;">H</span><span style="color:white;">A</span></i></h1>
+                <ul id="sidemenu">
+                    <li><a href="#header">HOME</a></li>
+                    <li><a href="#about">ABOUT ME</a></li>
+                    <li><a href="#services">SERVICES</a></li>
+                    <li><a href="#portfolio">PORTFOLIO</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                    <i class="fas fa-xmark" onclick="closemenu()"></i>
+                </ul> 
+                <i class="fas fa-bars" onclick="openmenu()"></i>        
+            </nav>
+            <div class="header-text">
+                <p>FULL STACK DEVELOPER</p>
+                <h1>Hi, i'm <span style="color:gold;">POOJITHA.R</span> <br>From India</h1>
+            </div>
+         </div>
+        </div>
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="poojithaR (2).png">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About me</h1>
+                        <p>I'm poojitha.I stay in chennai.I have completed my graduation Bachelor of Engineering in Panimalar Engineering College.
+                            currently I'm pursuing Masters in Fullstack Web Development with AWS.I have Zero work experience and I am fresher.</p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick ="opentabs('skill')">Skills</p>
+                            <p class="tab-links" onclick ="opentabs('experience')">Experience</p>
+                            <p class="tab-links" onclick ="opentabs('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skill">
+                            <ul class="myskills">
+                                <li>SQL</li>
+                                <li>WEB DESIGNING</li>
+                                <li>PYTHON(Django)</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                           <p><span style="color:gold">FRESHER</span> <br>I'm a fresher with a knowledge of<br> 
+                            SQL,WEB DESINGING(html,css,java script),PYTHON(Django)</p>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2023</span><br>FULL STACK WEB DEVELOPMENT WITH AWS from IT VEDANT</li>
+                                <li><span>2022</span><br>Bachelor of Engineering from Panimalar Engineering College</li>
+                            </ul>
+                        </div>
+                    </div>            
+                </div>
+            </div>
+        </div>
+        <!-- -----------SERVICES-------------------- -->
+        <div id="services">
+            <div class="container" style="font-size: 40px;">My Services</div>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-database"></i>
+                    <h2>SQL</h2>
+                    <p><b>designing,creating and maintaining databases,that build and validate the stability and efficiency of databases.</b></p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-computer"></i>
+                    <h2>WEB DESIGNING</h2>
+                    <p><b>design,implementation and maintenance  of websites and other web application</b></p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <h2>PYTHON</h2>
+                    <p><b>Developing websites and software</b></p>
+                    <a href="#">learn more</a>
+                </div>
+            </div>
+        </div>
+    
+        <!-- ----------------portfolio--------------- -->
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1>
+                <div id="work-list">
+                    <div id="work">
+                        <img src="SQL.png">
+                        <div class="layer"></div>
+                    </div>
+                    <div id="work">
+                        <img src="Web-Designing.jpg">
+                        <div class="layer"></div>
+                    </div>
+                    <div id="work">
+                        <img src="python.png">
+                        <div class="layer"></div>
+                    </div>               
+                </div>
+                <a href="#" class="btn">see more</a>
+            </div>
+        </div>
+    
+        <!-- ---------------contact----------- -->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact me</h1>
+                        <p><i class="fa-sharp fa-solid fa-paper-plane"></i>poojitha.R</p>
+                        <p><i class="fa-solid fa-phone"></i>+91-9790486624</p>
+                        <a href="poojitharesume.pdf" class="btn btn2">Download CV</a>
+                        <i class="fa-solid fa-download"></i>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="your name" required>
+                            <input type="text" name="Email" placeholder="your email" required>
+                            <textarea name="Message" rows="6" placeholder="your message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                        <span><div id="msg"></div></span>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>copyright <i class="fa-regular fa-copyright"></i>poojitha. Made with<i class="fa-solid fa-heart"> by easy tutorial</i></p>
+            </div>
+        </div>
+        <script>
+    
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+    
+            function opentabs(tabname){
+                for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                 tabcontent.classList.remove("active-tab");
+                }
+                 event.currentTarget.classList.add("active-link");
+                 document.getElementById(tabname).classList.add("active-tab")
+            }
+        </script>
+        <script>
+            var sidemenu= document.getElementById("sidemenu")
+            function openmenu(){
+                sidemenu.style.right= "0"
+            }
+            function closemenu(){
+                sidemenu.style.right="-200px"
+            }
+        </script>
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbwLJu1JVwNywCx3aTt-8ScZ8oFHu8KkpbPhVIspC8AYh2wJ24LTjYZYwzGv1U6XJDEnOw/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const msg=document.getElementById("msg")
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    msg.innerHTML="message sent successfully"
+                    setTimeout(function(){
+                        msg.innerHTML=""
+                    },5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
+</body>
+</html>
